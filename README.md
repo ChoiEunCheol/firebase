@@ -20,3 +20,18 @@
 `firebase --help`
 `firebase --version`
 위와 같은 간단한 조회 명령으로 정상적으로 명령이 되는지 확인한다.
+
+### 6. firebase 로그인
+- CLI 이긴하지만, 엄연히 계정권한이 필요하므로 로그인을 진행해야 한다.
+`firebase login`
+- 위의 로그인 명령어를 작성, 실행하면 아래 와 같은 승인 관련 요청이 발생한다.
+
+### 7. firebase 구글 계정 승인 처리
+? Allow Firebase to collect CLI and Emulator Suite usage and error reporting information? (Y/n) 
+- firebase에 사용량과, 오류 보고와 같은 정보 수집을 허용 하시겠습니까?
+- 정보 수집 동의이므로 Y로 응답한다. 
+- 동의하는 순간 브라우저가 열리면서 로그인을 요구한다.
+? 계정 엑세스 창이 활성화되며, 허용을 선택한다.
+허용한다면
++  Success! Logged in as kongukjae@gmail.com <- 다음과 같은 로그가 CLI 화면에 응답된다.
+
