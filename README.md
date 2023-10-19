@@ -35,3 +35,8 @@
 허용한다면
 +  Success! Logged in as kongukjae@gmail.com <- 다음과 같은 로그가 CLI 화면에 응답된다.
 
+### 8. 유지보수를 위해 프로젝트 디렉토리를 하위로 하나를 만든다.
+- 예제의 경우 app이라는 디렉토리를 만들었고, 그 하위로 public 이라는(index.html을 담기위한) 디렉토리를 간단하게 구성했다.
+- 최초 테스트이므로, index.html에 h1 태그 정도만 작성했다.
+
+
