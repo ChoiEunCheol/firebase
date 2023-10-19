@@ -39,4 +39,55 @@
 - 예제의 경우 app이라는 디렉토리를 만들었고, 그 하위로 public 이라는(index.html을 담기위한) 디렉토리를 간단하게 구성했다.
 - 최초 테스트이므로, index.html에 h1 태그 정도만 작성했다.
 
+### 9. firebase 서비스에서 프로젝트 제작하기
+- https://firebase.google.com/?hl=ko
+- 프로젝트 시작하기 버튼을 통해 진입하면 "프로젝트 추가"를 버튼을 확인 할 수 있다.
+- 임의의 프로젝트를 생성한다.
+- 예제의 경우 firebase-practics라는 이름으로 작명했다.
 
+### 10. firebase 설치 시작
+`firebase init` 명령을 진행하면, 몇가지 질문요청이 발생한다.
+발생하지 않았다면, 다시 돌아가 로그인 관련 처리가 정상적으로 진행되었는지 확인한다.
+질문의 내용은 다음과 같다.
+
+? Are you ready to proceed? (Y/n) 
+- 진행할 준비 됐니?
+- Y 입력
+
+( ) Realtime Database: Configure a security rules file for Realtime Database and (optionally) provision default instance    
+ ( ) Firestore: Configure security rules and indexes files for Firestore
+ ( ) Functions: Configure a Cloud Functions directory and its files
+> (*) Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+ ( ) Hosting: Set up GitHub Action deploys
+ ( ) Storage: Configure a security rules file for Cloud Storage
+ ( ) Emulators: Set up local emulators for Firebase products
+
+ 위와 같은 다양한 옵션 선택지를 보내주는데 여기에서 Hosting 부분중 첫번째를 선택한다.
+ ( ) Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+ - 스페이스바를 눌러 선택하고 엔터를 눌러 진행한다.
+ - github를 통해 진행할 것인지를 물어보는 것으로 "Action" 이라는 github 배포서비스를 말하며 보통의 경우 github의 저장소를 firebase를 통해 서비스하고자 할때 사용하는 것으로 *optionally* 직접 처리하기 위해 깃허브 액션 기능을 사용하지 않아도 되는 항목을 선택한다.(추후에는 필요한 만큼 선택)
+
+  > Use an existing project
+  Create a new project
+  Add Firebase to an existing Google Cloud Platform project
+  Don't set up a default project
+
+ - 웹 앱(firebase 사이트)에서 프로젝트를 생성했으므로, Use an existing project를 선택한다.
+ - 정상적인 경우 프로젝트(내가 작명한)가 선택지로 나타난다.
+
+ 정상적으로 선택된다면 '기본 설정(configuration)' 작업이 진행된다.
+
+### 11. 호스팅을 위한 몇가지 설정
+
+? What do you want to use as your public directory? *public*(이미 public 디렉토리를 만들었으으므로)
+? Configure as a single-page app (rewrite all urls to /index.html)? *No*(이미 index.html을 만들었으므로)
+? Set up automatic builds and deploys with GitHub? *No* (현재 연습은 github 연결 하지 않을 것이므로)
++  Wrote public/404.html
+? File public/index.html already exists. Overwrite? *Yes*(초기 화면을 덮어써서 최초설정을 할 것이므로)
++  Wrote public/index.html
+
+i  Writing configuration info to firebase.json...
+i  Writing project information to .firebaserc...
+i  Writing gitignore file to .gitignore...
+
++  Firebase initialization complete!
