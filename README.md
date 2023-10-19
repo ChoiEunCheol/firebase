@@ -91,3 +91,8 @@ i  Writing project information to .firebaserc...
 i  Writing gitignore file to .gitignore...
 
 +  Firebase initialization complete!
+
+### 12. 로컬 테스트
+`firebase serve`
+- firebase 기본 서버 포트는 5000번 이므로 live server 확장플러그인이 활성화되어있으면 충돌이 일어날 수 있다.
+- CLI에 간편하게 localhost 주소값을 확인 할 수 있다.
