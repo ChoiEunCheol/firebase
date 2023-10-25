@@ -1,0 +1,11 @@
+{
+  "name": "firebase",
+  "version": "1.0.0",
+  "description": "- 로컬 디렉토리 생성 or github repository\r ### 1. app.js \r - 파일 생성\r ### 2. npm init\r - 패키지 관리 초기화\r ### 3. 디버거 설치\r - ctrl + shift + D\r -------",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
